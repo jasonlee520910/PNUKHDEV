@@ -1,0 +1,100 @@
+div.alert {
+	display: block;
+	padding: 13px 15px 12px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	background-color: #2ba6cb;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+div.alert .boxicon {
+	display: block;
+	float: left;
+	background-image: url('icon.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 25px;	
+	background-position: -8px -8px;
+}
+div.alert p {
+	margin: 0px;
+    margin-right: 20px;
+	margin-left: 30px;
+}
+div.alert.success {
+	background-color: #5da423;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+div.alert.success .boxicon {
+	background-position: -48px -8px;
+}
+div.alert.warning {
+	background-color: #e3b000;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+div.alert.warning .boxicon {
+	background-position: -88px -8px;
+}
+div.alert.error {
+	background-color: #c60f13;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+div.alert.error .boxicon {
+	background-position: -128px -8px;
+}
+div.alert a.close {
+	color: #fff;
+	position: absolute;
+	right: 4px;
+	top: 0px;
+	font-size: 17px;
+	padding: 4px;
+}
+div.alert a.close:hover, div.alert-box a.close:focus {
+	opacity: 0.4;
+}
+span.link{color:#26466f;}
+span.link:hover{text-decoration:underline;cursor:pointer;}
+span.sbtn-gray{background:#ebebeb; border:1px solid #cacaca; padding:3px 5px; vertical-align:top; font-size:10px; color:#3d3d3d;}
+span.sbtn-black{background:#555; border:1px solid #444; padding:3px 5px; vertical-align:top; font-size:10px; color:#fff;}
+span.sbtn-white{background:#fff; border:1px solid #cacaca; padding:3px 5px; vertical-align:top; font-size:10px; color:#3d3d3d;}
+span.sbtn-blue{background:#0e98c0; border:1px solid #0f7d9d; padding:3px 5px; vertical-align:top; font-size:10px; color:#fff;}
+
+table{table-layout:fixed;}
+table tr td.lf{text-align:left;}
+table tr td.price{text-align:right;padding-right:10px;}
+table tr td a{text-decoration:none;color:#000;}
+table tr td a:hover{text-decoration:none;}
+input, textarea{font-size:13px;}
+table tr td.nodata{padding:50px 0 50px 0;}
+table tr.modinput:hover td{background:#f4f4f4;cursor:pointer;}
+table tr.modconfirm td input[type=text]{width:95%;}
+table.nopadtbl{padding:0;margin:0;}
+table.nopadtbl tr td{padding:0;margin:0;}
+table tr.putpopdata{cursor:pointer;}
+table tr.putpopdata:hover{background:#fafafa;}
+span.nec{padding-right:15px; background:url("../../_Img/Content/ico_nec.png") no-repeat right 4px;}
+table.thetbl tbody tr td input[type=radio]{display:inline;width:auto;}
+table.thetbl thead tr th {font-size:90%;}
+
+dl.btndiv{display:inline-block;margin:5px 0 0 10px;}
+dl.btndiv dd{display:inline;background:#ebebeb; border:1px solid #cacaca; padding:6px 5px; font-size:13px; color:#3d3d3d;}
+dl.btndiv dd:hover{background:#555; border:1px solid #444; color:#fff;cursor:pointer; }
+
+.thumb img{width:100%;}
+
+.layertbl {table-layout:fixed;}
+.layertbl tr td { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.notice{text-align:right;color:#666;padding:0 0 5px 0;}

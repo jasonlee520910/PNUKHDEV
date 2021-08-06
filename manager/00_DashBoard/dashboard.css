@@ -1,0 +1,30 @@
+<style>
+	table.dashtbl{border-top:1px solid #ccc;border-left:1px solid #ccc;}
+	table.dashtbl tr th, table.dashtbl tr td{border:none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+	table.dashtop{border-top:1px solid #ccc;border-left:1px solid #ccc;}
+	table.dashtop tr td{font-size:20px;font-weight:bold;}
+	.dashdiv{width:100%;padding:20px 0 20px 0;}
+	.graphdiv{width:59%;float:left;margin-right:1%;}
+	.graphdiv canvas{border:1px solid #ccc;}
+	.tbldiv{width:40%;float:left;}
+	table.subtbl{padding-bottom:20px;border-top:1px solid #ccc;border-left:1px solid #ccc;}
+	table.subtbl tr td{text-align:center;padding:3px 5px 3px 0;font-size:14px;cursor:pointer;}
+	table.subtbl tr:hover, table.subtbl tr.on{background:#eee;}
+	table.subtbl tr td a{text-decoration:underline;color:blue;}
+
+	dl.searbtn{width:100%;overflow:hidden;margin:20px 0 0 0;border-left:1px solid #aaa;}
+	dl.searbtn dd{float:left;border:1px solid #aaa;border-left:none;width:80px;padding:7px;text-align:center;font-size:14px;}
+	dl.searbtn dd:hover, dl.searbtn dd.on{background:#eee;cursor:pointer;}
+	dl.searbtn dd.sel{border:none;padding-top:0;margin:0 5px;}
+	dl.searbtn dd.sel01{margin-left:100px;}
+	dl.searbtn dd.sel select{height:35px;padding:7px;font-size:14px;border:1px solid #aaa;}
+	dl.searbtn dd.input{border:none;padding-top:0;margin:0 5px;width:300px;}
+	dl.searbtn dd.input:hover{background:#fff;cursor:none;}
+	dl.searbtn dd.input input{height:18px;padding:7px;font-size:14px;border:1px solid #aaa;}
+	dl.searbtn dd.input span.searchbtn{padding:8px 10px;font-size:14px;border:1px solid #aaa;background:#eee;margin-left:5px;}
+	dl.searbtn dd.input span.searchbtn:hover{cursor:pointer;background:#555;color:#fff;}
+	dl.searbtn dd.seldate{width:200px;}
+	dl.searbtn dd.seldate select{margin:0 5px;border:1px solid #aaa;}
+	dl.searbtn dd.selmedidate{width:700px;}
+	dl.searbtn dd.selmedidate select{margin:0 5px;border:1px solid #aaa;}
+</style>

@@ -1,0 +1,30 @@
+/* postalpop */
+.postalpop {/*position:absolute; left:-99999px; top:-99999px;*/ z-index:110; border:1px solid #d6dce7; border-radius:6px; background:#fff}
+.postalpop h2 {width:100%; height:46px; padding-left:20px; background:#3f3a39; color:#fff; line-height:46px; font-size:12px}
+.postalpop .btn-close {position:absolute; top:0; right:0; width:46px; height:46px; background:url('../../images/icon_close_01.png') no-repeat 50%; font-size:0}
+.postalpop .popcontents{padding:38px 36px}
+h1{padding:10px;margin:20px 0 0 20px;font-size:20px;}
+h1 .closebtn{float:right;cursor:pointer;margin-right:50px;padding:5px 10px 5px 10px;;color:#fff;background:#00A0E9;font-size:12px;}
+ul, li, dl, dd, span, a{font-size:12px;color:#666;list-style:none;margin:0;}
+#zipdiv{margin:0;padding:0 30px 30px 30px;list-style:none;width:auto;}
+#zipdiv li{padding:10px;border:none;}
+#zipdiv li.postallist{padding:0;border-bottom:1px solid #aaa;}
+#zipdiv .search{padding:10px 10px 10px 0;border-bottom:1px solid #aaa;}
+#zipdiv .search input{float:left;width:300px;/*height:30px;*/font-size:12px;margin-bottom:10px;}
+#zipdiv .search span{float:left;margin:0 0 0 10px;}
+#zipdiv .search p{clear:both;}
+#zipdiv li .btn{padding:5px 20px 5px 20px;;color:#fff;background:#00A0E9;font-size:12px;font-weight:bold;}
+.closebtn{float:right;padding:5px 20px 5px 20px;;color:#fff;background:#00A0E9;font-size:12px;font-weight:bold;}
+
+.nodata{padding:60px 0 60px 0;width:100%;text-align:center;}
+.ziplist{width:100%;padding:0;border-bottom:1px solid #eee;}
+.ziplist tr th, .ziplist tr td{text-align:left;padding:5px 0 5px 0;border-bottom:1px solid #ccc;}
+.ziplist tr:hover{cursor:pointer;background:#f4f4f4;}
+div.zippage{width:auto;text-align:center;margin:20px auto;}
+div.zippage a{text-align:center;padding:5px;border:1px solid #eee;padding:4px 7px 4px 7px;margin:2px;text-decoration:none;}
+div.zippage a:hover, div.zippage a.on{cursor:pointer;background:#333;color:#fff;}
+
+.modalpostalpop{position:relative;margin:auto;}
+#modalpostalpop{position:absolute;top:50px;margin:auto;}
+
+.translayer {position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; background:#000; opacity:0.4; filter:alpha(opacity="40")}

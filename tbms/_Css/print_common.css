@@ -1,0 +1,67 @@
+header, footer, section, article, aside, nav, menu, figure, figcaption{display:block;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,a,button,select{margin:0; padding:0; -webkit-text-size-adjust:none;}
+body,input,textarea,select,button,table{font-size:12px; font-weight:400; font-family: 'Noto Sans KR','Nanum Gothic','Malgun Gothic','Arial', 'Dotum','맑은 고딕', sans-serif; line-height:1.331;}
+body{position:relative; color:#333;}
+ul, ol{list-style:none;}
+img, fieldset{border:0;}
+fieldset{min-width:0;}
+img{vertical-align:top; max-width:100%; line-height:0; border:0 none;}
+a{color:#333; text-decoration:none; cursor:pointer;}
+table{border-collapse:collapse;} 
+em, address{font-style:normal;}
+hr{display:none;}
+dfn{font-style:normal;}
+label{cursor:pointer;}
+textarea{border:1px solid #bcbcbc;}
+button{-webkit-appearance:none; border:0 none;}
+button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
+input[type=text], button, textarea{text-shadow:none; box-shadow:none; background:none; border-radius:0; font-size:100%;}
+input[type=text], input[type=password], input[type=search], input[type=number], textarea{overflow:visible; line-height:normal; -webkit-appearance:none; border-radius:0;}
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration{display:none;}
+input.readonly, textarea.readonly{background:#f0f0f0 !important; border:1px solid #b3b3b3 !important; color:#999 !important;}
+.hide{position:absolute; top:-9999em; left:-9999em; width:0; height:0; font-size:0;}
+
+
+.callout{padding:10px;}
+.callout-success{background:#019C50;}
+.callout-warning{background:#F19113;}
+.callout-danger{background:#F19113;}
+.callout-info{background:#00B8ED;}
+.callout h4, .callout p{color:#fff;}
+.callout h4{font-size:15px;padding-bottom:10px;}
+
+.modtr td,.modtr2 td{text-align:left;}
+.modtr td input,.modtr2 td input{width:100%;}
+td.tit{text-align:center}
+.modtr2{background:#555;border-bottom:1px solid #999;}
+.modtr2 td textarea{width:99%;color:#fff;padding:5px;}
+
+.searchspan{float:right;}
+.searchspan input, .searchspan .btn{margin:-10px 0 5px 0;vertical-align:top;}
+.searchspan input{width:150px;height:30px;border:1px solid #fff;color:#fff;}
+.searchspan .btn{display:inline-block; margin:-10px 20px 0 5px;height:30px;padding:0; color:#fff;line-height:100%; background-color:#666;}
+
+.container aside .scan{background-color:none;}
+.container aside .scan input{padding:8px 10px; width:200px; height:30px;font-size:12px; color:#fff;
+		background-color:rgba(0,0,0,.5);border:none;}
+
+.autoid li span{cursor:pointer;font-size:15px;}
+.autoid li span:hover{color:yellow;text-decoration:underline;}
+
+.btn_regist{width:100px;margin:10px auto 100px auto;border:1px solid #fff;background:#000;cursor:pointer;
+		font-size:30px;color:#fff;font-weight:bold;padding:10px 20px 10px 20px;text-align:center;}
+.btn_regist:hover{color:yellow;}
+table tr th.title{font-weight:bold;border-bottom:1px solid #fff;padding:20px 0 10px 0;}
+.layer_fixed_wrap .tb dd input
+, .layer_fixed_wrap .tb dd select
+{padding:0 5px; width:90%; height:35px; font-size:15px; background-color:rgba(255,255,255,.5); border:1px solid #ddd;;}
+.pop_btn{display:inline-block; margin-left:5px; padding:5px 0; min-width:80px; height:33px; text-align:center; font-size:14px; font-weight:500; color:#fff; background-color:rgba(0,0,0,.5);}
+
+
+table#poplist tr:hover{background:#f4f4f4;cursor:pointer;}
+table tr td.left{text-align:left;padding-left:5px;}
+
+td.nodata{padding:50px;text-align:center;}

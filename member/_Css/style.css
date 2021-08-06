@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+@import "base.css";
+
+/* -----------------------------------------------
+    = Login
+----------------------------------------------- */
+.section_login{color:#fff; text-align:center;}
+.section_login h2{margin-top:80px; font-size:36px; font-weight:700;}
+.section_login .info_txt{margin:10px 0 25px; line-height:30px; font-size:18px;}
+.section_login .btn_go{display:inline-block; padding:0 10px; min-width:220px; line-height:40px; font-size:14px; color:#fff; background-color:rgba(0,0,0,.3);}
+.section_login .login_box{display:block; margin:50px auto; padding:50px 56px 0; width:382px; height:297px; background-color:rgba(0,0,0,.3);}
+.section_login .login_box input{margin-bottom:8px; padding:0 10px; width:100%; height:46px; font-size:18px; color:#fff; text-align:center; background-color:rgba(255,255,255,.5); border:none;}
+.section_login .login_box input::-webkit-input-placeholder{color:#fff;}
+.section_login .login_box input:-moz-placeholder,
+.section_login .login_box input::-moz-placeholder{color:#f2f2f2; opacity:1;}
+.section_login .login_box .btn{display:block; margin:6px 0 13px; width:100%; height:50px; line-height:50px; font-size:18px; color:#fff; background-color:#f26161;}
+.section_login .login_box .etc{font-size:0;}
+.section_login .etc .agree{position:relative; display:inline-block;}
+.section_login .etc .agree input{position:absolute; top:0; left:0; width:15px; height:15px; opacity:0;}
+.section_login .etc .agree label{display:block; padding-left:28px; line-height:20px; font-size:13px; color:#fff;}
+.section_login .etc .agree label:before{position:absolute; top:0; left:0; content:" "; width:20px; height:20px; border:1px solid #c6b5a5;}
+.section_login .etc .agree > input:checked + label:after{position:absolute; left:6px; top:1px; content:""; display:inline-block; width:8px; height:12px; border:2px solid #f26161; border-width:0 2px 2px 0; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.section_login .etc .lnk{line-height:20px; font-size:13px; color:#fff;}
+.section_login .etc .lnk:before{content:""; display:inline-block; margin:0 15px; width:0; height:12px; vertical-align:middle; border-left:1px solid #c6b5a5;}
+
+
+/* -----------------------------------------------
+    = 팝업레이어 
+----------------------------------------------- */
+.callout{padding:10px;}
+.callout-success{background:#019C50;}
+.callout-warning{background:#F19113;}
+.callout-danger{background:#F19113;}
+.callout-info{background:#00B8ED;}
+.callout h4, .callout p{color:#fff;}
+.callout h4{font-size:15px;padding-bottom:10px;}

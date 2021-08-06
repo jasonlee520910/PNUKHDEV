@@ -1,0 +1,360 @@
+ @charset "utf-8";
+/*--------*/
+ul.issue-summary{border-top:1px solid #cacaca;}
+ul.issue-summary li{border-bottom:1px solid #cacaca; border-right:1px solid #cacaca; overflow:hidden;}
+
+ul.issue-summary li p.btxt{position:relative; width:15%; padding:15px 0px; background:#f7f7f7; float:left;}
+ul.issue-summary li p.btxt:after{background:#cacaca; position:absolute; left:0px; top:0px; width:1px; height:100%; content:"";}
+ul.issue-summary li p.btxt span{padding-left:23px; font-weight:600;}
+
+ul.issue-summary li p.stxt{position:relative; padding:15px 0px; width:35%; float:left;}
+ul.issue-summary li p.stxt:after{background:#cacaca; position:absolute; left:0px; top:0px; width:1px; height:100%; content:"";}
+ul.issue-summary li p.stxt span{padding-left:18px;}
+
+/*선택된약재*/
+.stuff-list{position:relative; padding:5px 0 15px 100px}
+.stuff-list .btxt{position:absolute; height:24px; font-size:13px; color:#303030; left:0; top:15px; line-height:22px; width:94px; text-align:center;border:1px solid #dedede;}
+.stuff-list ul{text-align:left;}
+.stuff-list li{ display:inline-block; background:#666; padding:0 12px; line-height:26px; text-align:center; color:#fff; font-size:13px;margin-bottom:5px; vertical-align:top;}
+
+
+/*코드 메뉴분류*/
+.code-wrap{position:relative; max-width:650px}
+.code-wrap li{margin-bottom:4px;}
+.code-wrap .depth1{ cursor:pointer; padding-left:80px;border:1px solid #d5d5d5;  background:#f9f9f9; position:Relative; height:40px;}
+.code-wrap .depth.over:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth1.png) no-repeat center center ;}
+.code-wrap .depth:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth3.png) no-repeat center center ; width:42px; height:42px; position:absolute;left:-1px; top:-1px; display:block; content:"";}
+.code-wrap  .depth span.stxt, .code-wrap .depth .btxt{line-height:40px;display:inline-block; }
+.code-wrap  .depth span.stxt{font-size:11px; width:15% }
+.code-wrap  .depth span.btxt{ font-size:14px;font-weight:600; color:#333; width:60%}
+.code-wrap .btn-wrap{ position:absolute; right:10px; top:0; padding-top:7px}
+
+.code-wrap .depth2-wrap{padding-left:45px;margin-top:5px;}
+.code-wrap .depth2{ padding-left:70px;border:1px solid #d5d5d5;  background:#f9f9f9; position:Relative; height:40px;}
+.code-wrap .depth2.over:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth1.png) no-repeat center center ;}
+.code-wrap .depth2:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth3.png) no-repeat center center ; width:42px; height:42px; position:absolute;left:-1px; top:-1px; display:block; content:"";}
+.code-wrap .board-list-wrap{margin-bottom:25px;}
+
+
+.menu-wrap{position:relative; max-width:650px}
+.menu-wrap li{margin-bottom:4px;}
+.menu-wrap .depth1{ cursor:pointer; padding-left:70px;border:1px solid #d5d5d5;  background:#f9f9f9; position:Relative; height:40px;}
+.menu-wrap .depth1:hover, .code-wrap .depth1:hover{background:#f0f0f0}
+.menu-wrap .depth.over:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth1.png) no-repeat center center ;}
+.menu-wrap .depth:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth3.png) no-repeat center center ; width:42px; height:42px; position:absolute;left:-1px; top:-1px; display:block; content:"";}
+.menu-wrap .depth span.stxt, .menu-wrap .depth .btxt{line-height:40px;display:inline-block; }
+.menu-wrap .depth span.stxt{font-size:11px; width:15% }
+.menu-wrap .depth span.btxt{ font-size:14px;font-weight:600; color:#333; width:60%}
+.menu-wrap .btn-wrap{ position:absolute; right:10px; top:0; padding-top:7px}
+
+.menu-wrap .depth2-wrap{padding-left:45px;margin-top:5px;}
+.menu-wrap .depth2{ padding-left:80px;border:1px solid #d5d5d5;  background:#f9f9f9; position:Relative; height:40px;}
+.menu-wrap .depth2:hover, .code-wrap .depth2{background:#f0f0f0}
+.menu-wrap .depth2.over:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth1.png) no-repeat center center ;}
+.menu-wrap .depth2:after{ background:#666666 url(/Mngt/cmmImg/Content/code-depth3.png) no-repeat center center ; width:42px; height:42px; position:absolute;left:-1px; top:-1px; display:block; content:"";}
+.menu-wrap .board-list-wrap{margin-bottom:25px;}
+
+
+/*코드,메뉴 버튼*/
+.btn-wrap a{ width:26px; height:26px; display:inline-block; vertical-align:top; position:relative;}
+.btn-wrap a span{ position:absolute; opacity:0; left:50%;margin-left:-27px; background:#06a9dc; top:-15px; height:20px; line-height:20px; width:54px;color:#fff; font-size:13px; text-align:center;-webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out;-o-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
+.btn-wrap a:hover span{ opacity:1; top:-22px;}
+.btn-wrap a.add-btn{ background:url(/Mngt/cmmImg/Content/add-ico.jpg) no-repeat center center;}
+.btn-wrap a.move-btn{ background:url(/Mngt/cmmImg/Content/move-ico.jpg) no-repeat center center;}
+.btn-wrap a.modify-btn{ background:url(/Mngt/cmmImg/Content/write-ico.jpg) no-repeat center center;}
+.btn-wrap a.delete-btn{ background:url(/Mngt/cmmImg/Content/delete-ico.jpg) no-repeat center center;}
+.btn-wrap a.option-btn{ background:url(/Mngt/cmmImg/Content/option-ico.jpg) no-repeat center center;}
+.btn-wrap a.home-btn{background:url(/Mngt/cmmImg/Content/home-ico.jpg) no-repeat center center;}
+
+.btn-wrap a.move-btn span, .btn-wrap a.modify-btn span, .btn-wrap a.delete-btn span, .btn-wrap a.option-btn span{ width:32px; margin-left:-16px;}
+
+
+/*layer-pop*/
+/*.layer-wrap {position:absolute; width:550px; top:100px; display:none; left:45%;margin-left:-275px; z-index:1002; height:480px; overflow-y:scroll; background:#fff;  box-shadow:5px 5px 2px 0px rgba(0,0,0,0.15);}*/
+.layer-wrap .bd-line{height:0px; border-top:2px solid #333; text-indent:-20000px; display:block;}
+.layer-wrap .layer-top{background:#055496; height:50px; position:relative;}
+.layer-wrap .layer-top h2{ color:#fff; padding:0 25px ; color:#fff; font-weight:600; font-size:15px; line-height:50px;}
+.layer-wrap .layer-top .close-btn{width:50px; height:50px; background:rgba(0,0,0,0.2) url(../cmmImg/Content/close-btn.png) no-repeat center center; position:absolute; right:0; top:0;}
+.layer-wrap .layer-con{padding:15px;font-size:13px;}
+.layer-wrap .layer-con h3{margin-bottom:15px;}
+.layer-wrap .layer-con h3 span{color:#194991;}
+
+.layer-bg{background:rgba(0,0,0,0.4); display:none; position:absolute; left:0; top:0; width:100%; height:100%;z-index:1001}
+
+/*layer-page*/
+.layer-wrap2.layer-orderPrint{height:auto;top:50%}
+.layer-wrap2.layer-orderPrint .layer-con{padding:25px;}
+/*.layer-wrap2 {position:absolute; width:750px; top:100px; display:none; left:25%;margin-left:-275px; z-index:1002; height:680px; overflow-y:scroll; background:#fff;  box-shadow:5px 5px 2px 0px rgba(0,0,0,0.15);}*/
+.layer-wrap2 .bd-line{height:0px; border-top:2px solid #333; text-indent:-20000px; display:block;}
+.layer-wrap2 .layer-top2{background:#055496; height:50px; position:relative;}
+.layer-wrap2 .layer-top2 h2{ color:#fff; padding:0 25px ; color:#fff; font-weight:600; font-size:17px; line-height:50px;}
+.layer-wrap2 .layer-top2 .close-btn2{width:50px; height:50px; background:rgba(0,0,0,0.2) url(../cmmImg/Content/close-btn.png) no-repeat center center; position:absolute; right:0; top:0;}
+.layer-wrap2 .layer-con2{padding:25px;}
+.layer-wrap2 .layer-con2 h3{margin-bottom:15px;}
+.layer-wrap2 .layer-con2 h3 span{color:#194991;}
+
+.layer-bg{background:rgba(0,0,0,0.4); display:none; position:absolute; left:0; top:0; width:100%; height:100%;z-index:1001}
+
+
+/*sms*/
+.ov-scroll.sms-wrap{ max-height:480px; overflow-y:scroll}
+.sms-total{padding:4px 0px 4px 35px; font-size:15px;color:#41454c; background:url(/Mngt/cmmImg/Board/bsnum-icon.jpg) no-repeat; display:block;}
+.sms-total p{display:inline-block;}
+.sms-write-wrap{overflow:hidden;margin-top:20px;}
+.sms-write-wrap .sms-left{float:left; width:30%;}
+.sms-write-wrap .sms-data{border:1px solid #ddd;background:#f2f2f2 }
+.sms-write-wrap .special-box{background:#343434;border:1px solid #222; margin:20px 0 0 0; padding:5px}
+.sms-write-wrap .special-box a{display:inline-block; line-height:110%; padding:3px}
+.sms-write-wrap .special-box a:hover{ background:#222;}
+.sms-write-wrap .sms-data .sms-box{ background:#fff;border:1px solid #cecece;height:200px;  width:84%;overflow-y:scroll; margin:6% 6% 4% 6%; }
+.sms-write-wrap .sms-data .sms-byte{margin:0 6% 4% 6%; text-align:right ; font-size:13px;}
+.sms-write-wrap .sms-con{float:right; width:68%;}
+
+.gray-box.sms-con-list{ height:200px;background:#fff; padding:0}
+.gray-box.sms-con-list ul{padding-right:20px;overflow-y:scroll;}
+.gray-box.sms-con-list li{border-bottom:1px dotted #cecece; padding:6px 0 6px 10px;}
+.gray-box.sms-con-list li span{display:inline-block;}
+.gray-box.sms-con-list li span.name, .gray-box.sms-con-list li span.num{padding:0 6px; position:relative;}
+.gray-box.sms-con-list li span.num{border:none; padding-right:15px}
+
+
+/*process-con*/
+.process-top{overflow:hidden; position:relative; padding-left:200px ; border:1px solid #cecece}
+.process-top .today{ position:absolute;left:0; top:0; width:160px; height:84px;background:#f2f2f2; border-right:1px solid #cecece}
+.process-top .today .btxt, .process-top .today .stxt{display:block;text-align:center; line-height:140%}
+.process-top .today .btxt{ font-weight:600; font-size:23px; color:#333; padding-top:13px;}
+.process-top .today .stxt{display:block; font-weight:300; font-size:13px;}
+.process-top .con p{display:inline-block; vertical-align:top; padding:0 15px; line-height:82px;}
+.process-top .con .btxt{font-weight:400; font-size:15px;}
+.process-top .con .stxt{font-weight:400; font-size:14px; padding:0 15px; color:#676767}
+.process-top .con .stxt i{font-weight:600; font-size:20px; letter-spacing:-0.04em; color:#222; display:inline-block; margin-right:5px;vertical-align:top;}
+.process-con ul { text-align:left; padding:30px 0 40px 0; overflow:hidden}
+.process-con ul li{float:left; width:25%; text-align:center; position:relative;}
+.process-con .circles-text{font-size:24px !important; font-weight:600; line-height:100px !Important}
+.process-con .tit{position:absolute; left:0; top:83px; width:100%; text-align:center; color:#888}
+.process-con .info{display:block; text-align:center;}
+.process-con .stxt{display:inline-block; vertical-align:top; margin:0 3%}
+.process-con .stxt i{font-weight:600; font-size:15px; display:block; line-height:150%}
+.process-con .stxt i.green{ color:#54a809}
+.process-con .stxt i.black{color:#444}
+.process-con .stxt i.orange{ color:#f38400}
+.circle {display: inline-block;margin: 1em;position:relative;}
+
+
+	@media all and (max-width:1000px) {
+	.process-top {padding-left:0; margin-bottom:0}
+	.process-top .today{position:relative; left:auto; top:auto; width:auto;}
+	.process-top .con{padding:25px;}
+	.process-top .con p {line-height:160%; margin:5px 0}
+	.process-top .con .btxt{font-size:16px;}
+	.process-top .con .stxt{font-size:16px;}
+	.process-con ul{text-align:center}
+	.process-con ul li{margin-bottom:15px;float:none; width:auto; display:inline-block; vertical-align:top}
+
+	}
+
+/*탕진정보관련*/
+.order-box{overflow:hidden}
+.order-box .fl{width:66%; float:left;}
+.order-box .fr{width:31%; float:right;}
+.order-box .order-txt{ height:206px;}
+.order-box .order-txt textarea{height:204px; width:99.5%; border:1px solid #cecece;padding:0; margin:0; line-height:130%;}
+.order-box .order-type{overflow:hidden}
+.order-box .order-type li{float:left; width:50%; text-align:left;}
+.order-box .order-type li div.img{width:90% ;background:#f2f2f2; min-height:155px; margin-top:20px;}
+.order-box .order-type li div.img span{line-height:155px; text-align:center;display:block; text-transform:uppercase; color:#999}
+.order-box .order-type li div.img img{width:100%;}
+	@media all and (max-width:1000px) {
+		.order-box .fl{ float:none;width:auto;}
+		.order-box .fr{ float:none;width:auto;}
+		.order-box .fr h3{margin-top:30px}
+	}
+
+/* stats-time */
+.stats-time ul{ overflow:hidden; padding:15px 15px}
+.stats-time li{ float:left; width:12%;text-align:center; height:54px;text-align:left; margin-bottom: 10px;}
+.stats-time li:first-child{margin-left:0; }
+.stats-time li a{display:block;vertical-align:top;  height:54px; padding:0 12px 0 0 ; margin-left:12px;  border:1px solid grey;}
+.stats-time li a:hover{background-color:rgba(130,130,130,0.2) !important}
+.stats-time li.standby a, .stats-time li.ready a{background: url(../_Img/Main/stats-ready.png) no-repeat 80% center;}
+.stats-time li.end a{background: url(../_Img/Main/stats-end.png) no-repeat 80% center;}
+.stats-time li.ing a{background: url(../_Img/Main/stats-ing.png) no-repeat 80% center;}
+.stats-time .name{color:#0e98c0; font-size:20px; font-weight:500; display:block; line-height:120%; padding-top:6px;text-align:right; padding-right:55px}
+.stats-time .stxt{font-size:14px; font-weight:500; display:block; line-height:120%;text-align:right;; padding-right:55px}
+.stats-time .ready .stxt{color:#898989}
+.stats-time .ing .stxt{color:#f16060}
+.stats-time .end .stxt{color:#222}
+
+/* 마킹 */
+.marking-list{overflow:hidden;}
+.marking-list li {position:relative; width:33%;float:left; padding-left:130px;box-sizing:border-box; text-align:left;margin-top:10px;}
+.marking-list li .radio-box{position:absolute; left:0; top:0; height:18px; top:50%;margin-top:-9px;margin-left:10px;}
+.marking-list li div{background:#f8f8f8;border:1px solid #ededed;text-align:center; font-size:13px; line-height:200%; padding:13px;}
+.marking-list li .btxt{font-size:13px;}
+.marking-list li .stxt{font-size:13px;color:#898989}
+
+/* 조제타입 */
+.maType-list{overflow:hidden;}
+.maType-list li {position:relative; float:left;text-align:left;}
+
+/* 제형 */
+.dcShape-list{overflow:hidden;}
+.dcShape-list li {position:relative; width:20%;float:left;text-align:left;}
+
+/* 결합제 */
+.dcBinders-list{overflow:hidden;}
+.dcBinders-list li {position:relative; width:20%;float:left;text-align:left;}
+
+/* 분말도  */
+.dcFineness-list{overflow:hidden;}
+.dcFineness-list li {position:relative; width:20%;float:left;text-align:left;}
+
+/* 탕전조건   */
+.dcTerms-list{overflow:hidden;}
+.dcTerms-list li {position:relative; width:20%;float:left;text-align:left;}
+
+/* 감미제 */
+.sugar-list{overflow:hidden;}
+.sugar-list li {position:relative; width:15%;float:left;text-align:left;}
+
+/* 배송종류 */
+.delitype-list{overflow:hidden;}
+.delitype-list li {position:relative; float:left;text-align:left;}
+
+/* 보내는사람선택 */
+.resendtype-list{overflow:hidden;}
+.resendtype-list li {position:relative; float:left;text-align:left;}
+
+/* 중탕 */
+.dcJungtang-list{overflow:hidden;}
+.dcJungtang-list li {position:relative; width:30%;float:left;text-align:left;}
+
+
+/* 숙성 */
+.dcRipen-list{overflow:hidden;}
+.dcRipen-list li {position:relative; width:11%;float:left;text-align:left;}
+
+
+.liBoxSize h5{color:#4793aa; font-size:13px; font-weight:600;margin-bottom:10px;text-align:left;}
+
+/* 회원상태 */
+.meStatus-list{overflow:hidden;}
+.meStatus-list {position:relative; width:40%;float:left;text-align:left;}
+
+/* 회원구분 */
+.meGrade-list{overflow:hidden;}
+.meGrade-list li {position:relative; width:30%;float:left;text-align:left;}
+
+/* 한의원등급 */
+.miGrade-list{overflow:hidden;}
+.miGrade-list li {display:inline-block;width:auto;margin-right:10px;}
+
+/* 회원상태  */
+.meStatus-list{overflow:hidden;}
+.meStatus-list li {display:inline-block;width:auto;margin-right:10px;}
+
+/* 배송회사  */
+.miDelivery-list{overflow:hidden;}
+.miDelivery-list li {display:inline-block;width:auto;margin-right:10px;}
+
+/* 스탭관리 > 회원상태  */
+.meStatus-list{overflow:hidden;}
+.meStatus-list li {display:inline-block;width:auto;margin-right:10px;}
+
+/* 약재상태 */
+.medi-list{overflow:hidden;}
+.medi-list li {display:inline-block;width:auto;margin-right:2px;}
+
+/* 약재관리 > 별전 */
+.sweet-list li {position:relative; width:7%;float:left;text-align:left;}
+/* 약재관리 > 약재상태 */
+#mdStatusDiv li {position:relative; width:25%;float:left;text-align:left;}
+/* 한의원관리 > 회원상태 */
+/*#meStatusDiv li {position:relative; width:7%;float:left;text-align:left;}*/
+/* 스탭관리 > 회원상태 */
+/*#staffStatusDiv li {position:relative; width:22%;float:left;text-align:left;}*/
+
+
+
+/* 약재흡수율코드 */
+.water-list{overflow:hidden;}
+.water-list li {position:relative; width:7%;float:left;text-align:left;}
+
+/* 약재흡수율코드 */
+.whCategory-list{overflow:hidden;}
+.whCategory-list li {position:relative; width:9%;float:left;text-align:left;}
+
+/* 회원그룹 */
+.stAuth-list{overflow:hidden;}
+.stAuth-list li {position:relative; width:9%;float:left;text-align:left;}
+
+/* 소속 */
+.stDepart-list{overflow:hidden;}
+.stDepart-list li {position:relative; width:9%;float:left;text-align:left;}
+
+
+/* 약재출고분류 */
+.outStock-list{overflow:hidden;}
+.outStock-list li {position:relative; width:18%;float:left;text-align:left;}
+
+/* 약재출고조제대 */
+.outStockTable-list{overflow:hidden;}
+.outStockTable-list li {position:relative; width:13%;float:left;text-align:left;}
+
+/* 조제태그관리 > 조제분류 */
+.ptgroup-list{overflow:hidden;}
+.ptgroup-list li {position:relative; width:24%;float:left; text-align:center;}
+
+/* 약재함관리 > 조제대 */
+.mbTable-list{overflow:hidden;}
+.mbTable-list li {position:relative; width:48%;float:left; text-align:left;}
+
+/* 포장재관리 > 포장재분류 */
+.pbtype-list{overflow:hidden;}
+.pbtype-list li {position:relative; width:7%;float:left; text-align:left;}
+
+/* 포장재관리 > 포장재관리 */
+.pbchk-list{overflow:hidden;}
+.pbchk-list li {position:relative; width:7%;float:left; text-align:left;}
+
+
+/* 설진단, 맥상 */
+.chkdl{overflow:hidden;}
+.chkdl dd {position:relative; width:19%;float:left;text-align:left;}
+
+/* 버튼 */
+.btn-box{margin:25px auto; overflow:hidden}
+input.bdp-btn, button.bdp-btn {background:#26466f;font-size:100%;color:#fff;padding:0 19px;height:45px;vertical-align:top;overflow:visible;border:0;cursor:pointer;margin-right:5px;}
+input.bw-btn, button.bw-btn {background:#fff;font-weight:700;border-top:1px solid #c8c8c8;border-left:1px solid #c8c8c8;border-right:1px solid #9c9c9c;border-bottom:1px solid #9c9c9c;font-size:100%;padding:0 18px;height:45px;vertical-align:middle;cursor:pointer;overflow:visible;margin-right:5px;}
+
+/* 포장 및 박스 */
+.pack-list03{overflow:hidden; margin:0 -1%;}
+.pack-list03 li{ float:left;width:14%; margin:0 1% 1% 1%;text-align:left;}
+.pack-list03 li .check-box{display:block}
+.pack-list03 li .check-box span{ display:block;text-align:center;}
+.pack-list03 li .check-box .btxt{padding-top:7px;font-size:13px;}
+.pack-list03 li .check-box .stxt{color:#949494}
+.pack-list03 li .check-box label{display:block; padding:0;}
+.pack-list03 li .check-box img{width:100%; height:100px;border:1px solid #d7d7d7;box-sizing:border-box}
+
+.pack-list01{overflow:hidden; margin:0 -1%;}
+.pack-list01 li{ float:left;width:13%; margin:0 1% 1% 1%;text-align:left;}
+.pack-list01 li .check-box{display:block}
+.pack-list01 li .check-box span{ display:block;text-align:center;}
+.pack-list01 li .check-box .btxt{padding-top:7px;font-size:13px;}
+.pack-list01 li .check-box .stxt{color:#949494}
+.pack-list01 li .check-box label{display:block; padding:0;}
+.pack-list01 li .check-box img{width:100%; height:100px;border:1px solid #d7d7d7;box-sizing:border-box}
+/*.pack-list01 li .check-box label:after{border:1px solid #ddd;display:block;background-color:#fff;background-position:center center;border-radius:100%;position:absolute;left:7px;top:7px; width:20px; height:20px;content:"";transition:background .3s, border-color .3s; background-size:16px auto !important;}
+.pack-list01 li .check-box  input[type="radio"]:checked+label{color:#444;}
+.pack-list01 li .check-box  input[type="radio"]:checked+label:after{background: url(../_Img/Sub/check-ico.png) no-repeat center center #fff;}*/
+
+/* 약재재고목록 주문체크박스 */
+.checkbox-wrap { cursor: pointer; }
+.checkbox-wrap .check-icon  { display: inline-block; width: 26px; height: 26px; background: url(../_Img/Main/intro-save.png) left center no-repeat; vertical-align: middle; transition-duration: .3s; }
+.checkbox-wrap #mcorder { display: none; }
+.checkbox-wrap #mcorder:checked + .check-icon { background-image: url(../_Img/Main/intro-save-o.png); }
+
+
+dl.confirmbtn{text-align:center;overflow:hidden;float:right;padding:0px 0px 20px 0px;margin-top:-10px;}
+dl.confirmbtn dd{display:inline-block;padding:10px;width:40px;height:15px;border:1px solid #111;background:#fff;font-weight:bold;font-size:14px;color:#000;}

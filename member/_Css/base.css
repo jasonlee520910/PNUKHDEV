@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/* -----------------------------------------------
+    = Reset CSS
+----------------------------------------------- */
+header, footer, section, article, aside, nav, menu, figure, figcaption{display:block;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,a,button,select{margin:0; padding:0; -webkit-text-size-adjust:none;}
+body,input,textarea,select,button,table{font-size:12px; font-weight:400; font-family:'Nanum Gothic', Helvetica, Arial, sans-serif; line-height:1.331;}
+body{position:relative; color:#333;}
+ul, ol{list-style:none;}
+img, fieldset{border:0;}
+fieldset{min-width:0;}
+img{vertical-align:top; max-width:100%; line-height:0; border:0 none;}
+a{color:#333; text-decoration:none; cursor:pointer;}
+table{border-collapse:collapse;} 
+em, address{font-style:normal;}
+hr{display:none;}
+dfn{font-style:normal;}
+label{cursor:pointer;}
+textarea{border:1px solid #bcbcbc;}
+button{-webkit-appearance:none; border:0 none;}
+button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
+input[type=text], button, textarea{text-shadow:none; box-shadow:none; background:none; border-radius:0; font-size:100%;}
+input[type=text], input[type=password], input[type=search], input[type=number], textarea{overflow:visible; line-height:normal; -webkit-appearance:none; border-radius:0;}
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration{display:none;}
+input.readonly, textarea.readonly{background:#f0f0f0 !important; border:1px solid #b3b3b3 !important; color:#999 !important;}
+.hide{position:absolute; top:-9999em; left:-9999em; width:0; height:0; font-size:0;}
+
+
+/* -----------------------------------------------
+    = LAYOUT
+----------------------------------------------- */
+html{min-width:1280px;overflow:hidden;background:url(../_Img/han_bg_02.png); background-size:cover;}
+body{/*height:100%;*/}
+#wrap{position:relative;}
+#wrap *{box-sizing:border-box; -webkit-box-sizing:border-box;}
+.head_wrap{position:relative; padding:15px 15px 15px 30px; height:60px; line-height:30px; text-align:left; background-color:#434646;}
+.head_wrap .logo{display:inline-block; font-weight:800; font-size:16px; color:#f2c261;}
+.head_wrap .logo:before{content:""; display:inline-block; margin:-2px 10px 0 0; width:22px; height:35px; vertical-align:middle;background:url(../_Img/logo.png) no-repeat;}
+.head_wrap .btn{float:right;}
+.head_wrap .btn a{display:inline-block; margin-left:7px; padding:0 20px; min-width:78px; line-height:30px; font-size:14px; color:#fff; text-align:center; background-color:rgba(0,0,0,.5)}
+.head_wrap .lang{float:right;}
+.head_wrap .lang .slt_opt{height:30px; line-height:30px; width:202px; border-color:#9fa0a0;}
+.page{min-height:1024px; background:#000;height:1080px;}
+.sidebar{position:absolute; top:0; left:0; bottom:0; width:325px; background-color:#3c3b3a; box-shadow:2px 0 10px 0px rgba(0,0,0,1);}
+.page .container{margin-left:330px; height:1080px; background-color:rgba(255,255,255,.1); box-shadow:-2px 0 10px 0px rgba(0,0,0,1);}
+
+
+
+/* -----------------------------------------------
+    = Select
+----------------------------------------------- */
+.custom-selectbox {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin-right: 5px;
+	z-index: 10;
+}
+
+ul.selectbox-options {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	max-height: 30px;
+	margin: 0;
+	padding: 0;
+	background-color: #fcfcfc;
+	z-index: 9;
+	transition: max-height .5s ease-out;
+}
+ul.selectbox-options li {
+	list-style: none;
+}
+ul.selectbox-options.opened {
+	height: auto;
+	max-height: 500px;
+}
+ul.selectbox-options li {
+	display: none;
+	height: 30px;
+	padding: 0 10px;
+	line-height: 30px;
+	font-size: 12px;
+}
+ul.selectbox-options li.selected {
+	font-weight: bold;
+}
+ul.selectbox-options li.selected,
+ul.selectbox-options li:first-child,
+ul.selectbox-options.opened li.selected:first-child {
+	background-repeat: no-repeat; background-image: url(../_Img/customized_selectbox.png); background-position: 100% 3px;	
+}
+ul.selectbox-options.opened li:first-child,
+ul.selectbox-options.opened li.selected:first-child {
+	background-position: 100% -22px;
+}
+ul.selectbox-options.opened li {
+	display: block;
+}
+ul.selectbox-options.opened li.selected {
+	background-image: none;
+}
+ul.selectbox-options li.selected {
+	display: block;
+}
+ul.selectbox-options li:hover {
+	background-color: #f5f5f5;
+}
